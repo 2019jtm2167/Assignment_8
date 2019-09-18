@@ -39,10 +39,10 @@ else:
     print(output)
 ####################################### second code #############################
 print("Parity bit data")
-print(concatenate_list_data(output))              #
+print(concatenate_list_data(output))              # calling function for concatenate
 buffer=concatenate_list_data(output)
 for i in range(0, len(output)):
-    if (output[i] == 0 and output[i+1] == 1 and output[i+2] == 0):
+    if (output[i] == 0 and output[i+1] == 1 and output[i+2] == 0):         # checking for sequence
         output.insert(i+3,"0")
 print(output)
 
