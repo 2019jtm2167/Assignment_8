@@ -45,7 +45,8 @@ for i in range(0, len(output)):
     if (output[i] == 0 and output[i+1] == 1 and output[i+2] == 0):
         output.insert(i+3,"0")
 print(output)
-print("Transmitting data:")
+
 print(concatenate_list_data(output))
 buffer=concatenate_list_data(output)+"0101"
+print("Transmitting data:")
 print(buffer)
