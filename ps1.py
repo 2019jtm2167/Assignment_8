@@ -13,8 +13,6 @@ bit=int(input("Enter the transmitted bit :"))
 count1=0
 count0=0
 
-
-
 # Output list initialization
 output = []
 
@@ -30,21 +28,24 @@ i=0
 for i in range(0, len(output)):
     if(output[i]==1):
         count1+=1
-# print((count1))
+
 remen = count1 / 10
-# print((remen))
+
 if(count1%2==0):
     # print("This Number is Even")
     output.append(1)
     # print(output)
 else:
     print(output)
+####################################### second code #############################
 print("Parity bit data")
-print(concatenate_list_data(output))
+print(concatenate_list_data(output))              #
 buffer=concatenate_list_data(output)
 for i in range(0, len(output)):
     if (output[i] == 0 and output[i+1] == 1 and output[i+2] == 0):
-        output.insert(i+3,1)
+        output.insert(i+3,"0")
 print(output)
 print("Transmitting data:")
 print(concatenate_list_data(output))
+buffer=concatenate_list_data(output)+"0101"
+print(buffer)
