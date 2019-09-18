@@ -25,14 +25,14 @@ print(Reverse(output))
 # print(output)
 # print(output[2])
 i=0
-for i in range(0, len(output)):
+for i in range(0, len(output)):          #  finding  remender
     if(output[i]==1):
         count1+=1
 
 remen = count1 / 10
 
 if(count1%2==0):
-    # print("This Number is Even")
+    # print("This Number is Even")          # finding even or odd
     output.append(1)
     # print(output)
 else:
